@@ -1,0 +1,140 @@
+@import
+url('https://fonts.googleapis.com/css2?family=Castoro&family=Nunito:wght@800&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #0D2025;
+}
+#wrapper {
+  max-width: 90%;
+  margin: 0 auto;
+  background-color: #0D2025;
+}
+#grid-container {
+	display: grid;
+ 	grid-template-rows: auto auto auto auto auto 700px 50px;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "spot"
+    "gor"
+    "national"
+    "ant"
+    "swim"
+    "shark"
+    "footer";
+  grid-gap: 1vw;
+}
+.phohead {
+  font-size: 58px;
+  font-family: 'Nunito', sans-serif;
+  padding: 0 0 40px 0;
+  color: #7dab9b;
+}
+h1 {
+  text-align: center;
+  color:white;
+  font-family: 'Nunito', sans-serif;
+  font-size: 17px;
+  padding-top: 30px;
+}
+.flex-box {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 40px;
+}
+
+#logo {
+  height: 75px;
+}
+a {
+  text-decoration-line: none;
+  font-family: 'Nunito', sans-serif;
+  color: #7DAB9B;
+}
+a:hover {
+  color: #E47855;
+}
+a:visited {
+  color : white;
+}
+ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+li {
+  padding: 30px 30px 0px 30px;
+}
+
+button {
+  background-color: #E47855;
+  width: 150px;
+  height: 50px;
+  border-radius: 100px;
+  color: white;
+  font-family: 'Nunito', sans-serif;
+  margin-top: 20px;
+}
+
+h2 {
+  font-size: 36px;
+  font-family: 'Nunito', sans-serif;
+  color: #E47855;
+  border-bottom: 1px solid #E47855;
+}
+#spot {
+  grid-area: spot;
+}
+p {
+  color: white;
+  font-family: 'Castoro', serif;
+  font-size: 18px;
+  padding: 25px 0 20px 0;
+}
+#gor {
+  grid-area: gor;
+}
+#national {
+  grid-area: national;
+}
+#ant {
+  grid-area: ant;
+}
+.pic {
+  display: block;
+  float: left;
+  width: 400px;
+  padding-right: 20px;
+}
+.book {
+  background-color: #89aabf;
+  font-family: 'Castoro', serif;
+  padding: 10px;
+
+}
+#swim {
+  grid-area: swim;
+}
+#shark {
+  grid-area: shark;
+}
+#footer {
+  grid-area: footer;
+  background-color: #0D2025;
+  text-align: center;
+  color: #E47855;
+  font-family: 'Nunito', sans-serif;
+  font-size: 21px;
+}
+
+.back {
+  color: white;
+  font-family: 'Castoro', serif;
+  display: flex;
+  justify-content: center;
+}

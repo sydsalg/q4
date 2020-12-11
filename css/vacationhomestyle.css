@@ -1,0 +1,140 @@
+@import
+url('https://fonts.googleapis.com/css2?family=Castoro&family=Nunito:wght@800&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #0D2025;
+}
+#wrapper {
+	max-width: 90%;
+	margin: 0 auto;
+}
+#grid-container {
+	display: grid;
+ 	grid-template-rows: 100vh auto 50px;
+  	grid-template-columns: 1fr 1fr 1fr;
+  	grid-template-areas:
+  	"big big big"
+  	"pic1 pic2 pic3"
+  	"footer footer footer";
+  	grid-gap: 2vw;
+}
+.flex-box {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	padding: 40px;
+}
+
+#logo {
+	height: 75px;
+}
+h1 {
+	color: white;
+	font-family: 'Nunito', sans-serif;
+	font-size: 17px;
+	padding-top: 30px;
+}
+a {
+	text-decoration-line: none;
+	font-family: 'Nunito', sans-serif;
+	color: #7DAB9B;
+}
+a:hover {
+  color: #E47855;
+}
+a:visited {
+  color : white;
+}
+ul {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+li {
+ 	padding: 30px 30px 0px 30px;
+}
+
+button {
+  background-color: #E47855;
+  width: 150px;
+  height: 50px;
+  border-radius: 100px;
+  color: white;
+  font-family: 'Nunito', sans-serif;
+  margin-top: 20px;
+  
+}
+#big {
+	grid-area: big;
+    background: url(../images/vacahome/fislands.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;	
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	border-top: 3px solid #E47855;
+}
+
+.color {
+ 	background-color: rgba(0,0,0, .4); 
+}
+h2 {
+	padding: 10px;
+	
+}
+.title {
+	font-size: 50px;
+    margin-bottom: 0;
+    font-family: 'Nunito', sans-serif;
+    color: #7DAB9B;
+}
+#pic1 {
+	grid-area: pic1;
+}
+h3 {
+	font-family: 'Nunito', sans-serif;
+	font-weight: 800;
+	color: #E47855;
+	border-bottom: 2px solid #E47855;
+	text-align: center;
+}
+p {
+	font-family: 'Castoro', serif;
+	color: white;
+	font-size: 13px;
+}
+.pic {
+	height: 200px;
+	overflow: hidden;
+	padding-top: 5px;
+}
+.w {
+	width: 100%;
+}
+#pic2 {
+	grid-area: pic2;
+}
+#pic3 {
+	grid-area: pic3;
+}
+#footer {
+	grid-area: footer;
+}
+footer {
+	text-align: center;
+	color: #E47855;
+	font-family: 'Nunito', sans-serif;
+	font-size: 21px;
+}
+.back {
+	color: white;
+	font-family: 'Castoro', serif;
+	display: flex;
+	justify-content: center;
+}
